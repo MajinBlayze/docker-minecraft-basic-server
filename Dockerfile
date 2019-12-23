@@ -1,9 +1,9 @@
-FROM ubuntu
+FROM MajinBlayze/archlinux-docker
 
-MAINTAINER ich777
+MAINTAINER MajinBlayze
 
-RUN apt-get update
-RUN apt-get -y install wget screen
+RUN pacman -Syyu --noconfirm
+RUN pacman -S screen --noconfirm
 
 ENV DATA_DIR="/serverdata"
 ENV SERVER_DIR="${DATA_DIR}/serverfiles"
