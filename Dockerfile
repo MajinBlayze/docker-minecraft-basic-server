@@ -1,4 +1,4 @@
-FROM MajinBlayze/archlinux-docker
+FROM majinblayze/archlinux-docker
 
 MAINTAINER MajinBlayze
 
