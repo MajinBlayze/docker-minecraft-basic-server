@@ -2,7 +2,6 @@ FROM majinblayze/archlinux-docker
 
 MAINTAINER MajinBlayze
 
-RUN pacman -Syyu --noconfirm
 RUN pacman -S screen --noconfirm
 
 ENV DATA_DIR="/serverdata"
