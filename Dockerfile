@@ -13,12 +13,12 @@ ENV GAME_PORT=25565
 ENV XMX_SIZE=1024
 ENV XMS_SIZE=1024
 ENV ACCEPT_EULA="false"
-ENV UID=99
-ENV GID=100
+#ENV UID=99
+#ENV GID=100
 
 RUN mkdir $DATA_DIR
 RUN mkdir $SERVER_DIR
-RUN useradd -d $DATA_DIR -s /bin/bash --uid $UID --gid $GID minecraft
+RUN useradd -d $DATA_DIR -s /bin/bash minecraft
 RUN chown -R minecraft $DATA_DIR
 
 RUN ulimit -n 2048
