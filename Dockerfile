@@ -1,6 +1,6 @@
 FROM majinblayze/archlinux-docker
 
-MAINTAINER MajinBlayze
+LABEL maintainer="MajinBlayze"
 
 RUN pacman -S screen --noconfirm
 
