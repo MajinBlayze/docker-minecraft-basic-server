@@ -2,7 +2,7 @@ FROM majinblayze/archlinux-docker
 
 LABEL maintainer="MajinBlayze"
 
-RUN pacman -Syyu --noconfirm && pacman -S screen --noconfirm
+RUN pacman -Syyu --noconfirm && pacman -S screen minecraft-server --noconfirm
 
 ENV DATA_DIR="/serverdata"
 ENV SERVER_DIR="${DATA_DIR}/serverfiles"
@@ -31,3 +31,4 @@ USER minecraft
 
 #Server Start
 ENTRYPOINT ["/opt/scripts/start-server.sh"]
+
