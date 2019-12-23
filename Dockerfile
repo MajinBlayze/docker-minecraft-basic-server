@@ -2,7 +2,7 @@ FROM majinblayze/archlinux-docker
 
 LABEL maintainer="MajinBlayze"
 
-RUN pacman -S screen --noconfirm
+RUN pacman -Syyu --noconfirm && pacman -S screen --noconfirm
 
 ENV DATA_DIR="/serverdata"
 ENV SERVER_DIR="${DATA_DIR}/serverfiles"
